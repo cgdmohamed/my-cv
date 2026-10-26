@@ -1,0 +1,15 @@
+# Coolify: Build Pack = Docker Compose, Base Directory = /, Compose Location = /docker-compose.yaml
+# No `ports:` on purpose — Coolify's proxy routes your domain to the container's port 80.
+services:
+  cv:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    mem_limit: 64m

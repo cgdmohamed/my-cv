@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Mostafa — Software Engineer & CEO, Creative Code</title>
+  <meta name="description" content="CV of Mohamed Mostafa (Mo): software engineer and founder of Creative Code with 12+ years building e-commerce, eLearning, ERP and marketing systems for clients in Egypt, KSA, UAE and the UK.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mohamed Mostafa — Software Engineer & CEO">
+  <meta property="og:description" content="12+ years building web products and growth systems. Founder of Creative Code.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a href="#top" class="brand" id="brand">Mo</a>
+      <nav aria-label="Sections">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+        <button class="btn btn-sm" id="printBtn">Download PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <img class="avatar" id="photo" alt="" width="132" height="132">
+      <div>
+        <p class="badge" id="available"></p>
+        <h1 id="name"></h1>
+        <p class="title" id="title"></p>
+        <p class="loc" id="location"></p>
+        <p class="summary" id="summary"></p>
+        <div class="cta">
+          <a class="btn" id="ctaPrimary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#projects">See work</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap stats" id="stats" aria-label="Highlights"></section>
+
+    <section class="wrap block" id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline" id="experienceList"></ol>
+    </section>
+
+    <section class="wrap block" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid" id="skillList"></div>
+    </section>
+
+    <section class="wrap block" id="projects">
+      <h2>Selected work</h2>
+      <div class="cards" id="projectList"></div>
+    </section>
+
+    <section class="wrap block two-col" id="edu-lang">
+      <div id="educationBlock">
+        <h2>Education</h2>
+        <ul class="plain" id="educationList"></ul>
+      </div>
+      <div id="languagesBlock">
+        <h2>Languages</h2>
+        <ul class="plain" id="languageList"></ul>
+      </div>
+    </section>
+
+    <section class="wrap block contact" id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list" id="contactList"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> <span id="footName"></span></p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
